@@ -1,110 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>টাস্ক লিস্ট</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .marquee-container {
-            background-color: #ff9800;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-        .task-container {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .task-header {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .task-date {
-            color: red;
-            font-size: 14px;
-        }
-        .take-task {
-            display: block;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .task-price {
-            color: #ff9800;
-            font-size: 16px;
-            font-weight: bold;
-            float: right;
-        }
-    </style>
+    <title>টাস্ক কমপ্লিট পেজ</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="marquee-container">
-    <marquee>টাস্ক কমপ্লিট করে স্ক্রিনশট টেলিগ্রামে জমা দিন</marquee>
-</div>
+    <!-- 🟠 হেডার -->
+    <div class="header">
+        টাস্ক কমপ্লিট করে স্ক্রিনশট জমা দিন 📸
+    </div>
 
-<div class="task-container">
-    <div class="task-header">1️⃣ এই টাস্কটির কাজ হলো - টেলিগ্রাম চ্যানেলে জয়েন করা।</div>
-    <div class="task-date">⚠️ Task Added Date: <span class="task-date-dynamic"></span></div>
-    <a href="https://t.me/Earning_with_Nahid" class="take-task" target="_blank">Take Task</a>
-    <span class="task-price">৳ ২০.০০</span>
-</div>
+    <div class="container">
+        <h2>আজকের টাস্ক ✅</h2>
 
-<div class="task-container">
-    <div class="task-header">2️⃣ এই টাস্কটির কাজ হলো - ইউটিউব চ্যানেল সাবস্ক্রাইব করা।</div>
-    <div class="task-date">⚠️ Task Added Date: <span class="task-date-dynamic"></span></div>
-    <a href="https://youtube.com/@yousuf45164?si=8CmdvG_Q3BhV0_Lo" class="take-task" target="_blank">Take Task</a>
-    <span class="task-price">৳ ২০.০০</span>
-</div>
+        <!-- 🔹 টাস্ক ১ -->
+        <div class="task">
+            <span class="task-number">1️⃣</span>
+            <p>এই টাস্কের কাজ হলো - টেলিগ্রাম চ্যানেলে জয়েন করা।</p>
+            <p class="date">📅 Task Added Date: <span id="date1"></span></p>
+            <a href="https://t.me/Earning_with_Nahid" class="task-btn">Take Task</a>
+            <span class="amount">৳ ২০.০০</span>
+        </div>
 
-<div class="task-container">
-    <div class="task-header">3️⃣ এই টাস্কটির কাজ হলো - ইউটিউব চ্যানেল সাবস্ক্রাইব করা।</div>
-    <div class="task-date">⚠️ Task Added Date: <span class="task-date-dynamic"></span></div>
-    <a href="https://youtube.com/@nahid-n0d?si=eSRpIyg492vkDjne" class="take-task" target="_blank">Take Task</a>
-    <span class="task-price">৳ ২০.০০</span>
-</div>
+        <!-- 🔹 টাস্ক ২ -->
+        <div class="task">
+            <span class="task-number">2️⃣</span>
+            <p>এই টাস্কের কাজ হলো - ইউটিউব চ্যানেলে সাবস্ক্রাইব করা।</p>
+            <p class="date">📅 Task Added Date: <span id="date2"></span></p>
+            <a href="https://example.com/task2" class="task-btn">Take Task</a>
+            <span class="amount">৳ ২০.০০</span>
+        </div>
 
-<div class="task-container">
-    <div class="task-header">4️⃣ এই টাক্সটির কাজ হল - ভিডিও ফুল দেখা  🎁</div>
-    <div class="task-date">⚠️ Task Added Date: <span class="task-date-dynamic"></span></div>
-    <a href="https://youtu.be/X1Xfu86ypKg?si=rYrYZsNBEWs8-GEZ" class="take-task" target="_blank">Take Task</a>
-    <span class="task-price">৳ ২০.০০</span>
-</div>
+        <!-- 🔹 টাস্ক ৩ -->
+        <div class="task">
+            <span class="task-number">3️⃣</span>
+            <p>এই টাস্কের কাজ হলো - ইউটিউব ভিডিও লাইক করা।</p>
+            <p class="date">📅 Task Added Date: <span id="date3"></span></p>
+            <a href="https://example.com/task3" class="task-btn">Take Task</a>
+            <span class="amount">৳ ২০.০০</span>
+        </div>
 
-<script>
-    function updateDates() {
-        let today = new Date();
-        let day = today.getDate();
-        let month = today.toLocaleString('bn-BD', { month: 'long' });
-        let year = today.getFullYear();
-        let fullDate = day + " " + month + " " + year;
+        <!-- 🔹 টাস্ক ৪ -->
+        <div class="task">
+            <span class="task-number">4️⃣</span>
+            <p>এই টাস্কের কাজ হলো - ভিডিও ফুল দেখা 🎁</p>
+            <p class="date">📅 Task Added Date: <span id="date4"></span></p>
+            <a href="https://example.com/task4" class="task-btn">Take Task</a>
+            <span class="amount">৳ ২০.০০</span>
+        </div>
+    </div>
 
-        let dateElements = document.querySelectorAll(".task-date-dynamic");
-        dateElements.forEach(element => {
-            element.textContent = fullDate;
-        });
-    }
-
-    updateDates();
-</script>
-
+    <script src="script.js"></script>
 </body>
-</html>
+                </html>
