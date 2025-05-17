@@ -1,108 +1,96 @@
 <!DOCTYPE html><html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>INCOME ZONE</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #ffffff;
-      color: #000000;
-    }header {
-  background-color: #f44336;
-  color: white;
-  padding: 15px 20px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.container {
-  background: #ffeb3b;
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.section {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.button {
-  background: #f44336;
-  color: white;
-  border: none;
-  padding: 12px 25px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background: #d32f2f;
-}
-
-.join-button {
-  background: #ffffff;
-  border: 2px solid #f44336;
-  color: #f44336;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 25px;
-  cursor: pointer;
-}
-
-.join-button:hover {
-  background: #f44336;
-  color: white;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  color: #666;
-}
-
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      color: #fff;
+      background: linear-gradient(135deg, #ff0000, #cc0000);
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ff0000;
+      font-family: 'Arial Black', Gadget, sans-serif;
+      animation: flash 2s infinite;
+    }
+    @keyframes flash {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0.5;}
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+    .btn {
+      background-color: #fff;
+      color: #ff0000;
+      padding: 15px 30px;
+      margin: 10px;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #ff0000;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    .television {
+      width: 100px;
+      height: 80px;
+      background: #000;
+      border: 6px solid #fff;
+      border-radius: 10px;
+      margin: 20px auto;
+      animation: shake 1s infinite;
+    }
+    @keyframes shake {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      50% { transform: rotate(-2deg); }
+      75% { transform: rotate(2deg); }
+      100% { transform: rotate(0deg); }
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
   <header>
-    INCOME ZONE
+    <h1>INCOME ZONE</h1>
   </header>
   <div class="container">
-    <div class="section">
-      <h2>আমাদের সম্পর্কে</h2>
-      <p>INCOME ZONE একটি ইনকাম প্ল্যাটফর্ম যেখানে আপনি বট চালিয়ে ইনকাম করতে পারেন। আমাদের মিশন হলো সহজ ও নিরাপদ উপায়ে আপনাকে আয়ের সুযোগ করে দেয়া।</p>
-    </div><div class="section">
-  <h2>বট চালু করুন</h2>
-  <button class="button">বট চালু করুন</button>
-</div>
-
-<div class="section">
-  <h2>ভোট দিন</h2>
-  <button class="button">ভোট দিন</button>
-</div>
-
-<div class="section">
-  <h2>প্রাইভেসি পলিসি</h2>
-  <p>আমরা আপনার তথ্য গোপনীয়ভাবে সংরক্ষণ করি এবং তৃতীয় পক্ষের সাথে শেয়ার করি না। বিস্তারিত জানতে আমাদের প্রাইভেসি পলিসি পড়ুন।</p>
-</div>
-
-<div class="section">
-  <h2>টেলিগ্রাম চ্যানেল</h2>
-  <button class="join-button">JOIN</button>
-</div>
-
+    <div class="television"></div>
+    <a href="#playbot" class="btn">Play Bot</a>
+    <a href="#join1" class="btn">Join Telegram Channel 1</a>
+    <a href="#join2" class="btn">Join Telegram Channel 2</a>
+    <a href="#join3" class="btn">Join Telegram Channel 3</a>
+    <a href="#privacy" class="btn">Privacy Policy</a>
   </div>
   <footer>
-    &copy; 2025 INCOME ZONE. সর্বস্বত্ব সংরক্ষিত।
+    &copy; 2025 Income Zone. All Rights Reserved.
   </footer>
 </body>
 </html>
